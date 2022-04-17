@@ -585,7 +585,14 @@
                 first meal is on us!
               </p>
 
-              <form class="cta-form" name="sign-up" netlify>
+              <form
+                class="cta-form"
+                name="sign-up"
+                method="POST"
+                data-netlify-recaptcha="true"
+                data-netlify="true"
+                netlify
+              >
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
@@ -620,6 +627,7 @@
                   </select>
                 </div>
 
+                <div data-netlify-recaptcha="true"></div>
                 <input class="btn" type="submit" value="Sign up now" />
               </form>
             </div>
